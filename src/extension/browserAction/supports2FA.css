@@ -1,0 +1,19 @@
+.icon {
+  fill: #ff0000;
+  width: 24px;
+  height: 24px;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  width: 240px;
+  padding: 24px;
+
+}
+
+svg {
+  display: block;
+}
