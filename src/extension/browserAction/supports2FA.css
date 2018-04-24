@@ -17,3 +17,8 @@ body {
 svg {
   display: block;
 }
+
+.info-2fa {
+  display: none;
+  background-color: #ff0000;
+}
