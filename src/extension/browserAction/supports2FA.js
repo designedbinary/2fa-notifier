@@ -19,12 +19,14 @@ $(function(){
 
   $("#more2faInfoButton").click(function() {
     
-    $(".methods").toggle();
+    
 
     if ($(".methods").css("display") === 'none') {
-      $("html").css("height", originalWindowHeight);
-      console.log($(".methods").css("display"));
-      console.log("original window height = " + originalWindowHeight);
+      $(".methods").toggle();
+      //$("html").css("height", originalWindowHeight);
+      $("#more2faInfoButton").addClass("methods__info-btn--hide");
+      //console.log($(".methods").css("display"));
+      //console.log("original window height = " + originalWindowHeight);
     }
   });
 
