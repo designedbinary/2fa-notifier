@@ -1,0 +1,153 @@
+*{
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  width: 15rem;
+  padding: 1.5rem;
+  color: #433E36;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+svg {
+  display: block;
+}
+
+.icon {
+  fill: #9B8333;
+  width: 24px;
+  height: 24px;
+}
+
+.icon:hover {
+  opacity: 0.7;
+}
+
+.methods {
+  display: none;
+  font-weight: 400;
+  width: 100%;
+}
+
+.methods__info-btn {
+  align-self: center;
+  margin-bottom: 1rem;
+}
+
+.methods__title {
+  font-size: 0.8125rem;
+  padding: 0.5rem 0;
+}
+
+.methods__list {
+  list-style-type: none; 
+  padding:0;
+  margin: 0.5rem 0 0 0;
+  width: 100%;
+}
+
+.methods__list li {
+  display: flex;
+  flex-direction: row;
+  border-top: solid 1px #87847E;
+  width: 100%;
+  padding: 1rem;
+}
+
+.methods__list p {
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+.main-art {
+  width: 192px;
+  height: 159px;
+}
+
+.extension-headline {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #69655E;
+  text-align: center;
+  margin:0;
+  align-self: center;
+}
+
+.cta-btn {
+  margin: 1rem 0;
+  width: 100%;
+  padding: 0.75rem 0;
+  text-align: center;
+  text-decoration: none;
+  background-color: #F3CD50;
+  box-shadow: 0px 3px 12px rgba(135, 205, 220, 0.34);
+  border-radius: 200px;
+  align-self: center;
+}
+
+.cta-btn__headline {
+  font-weight: 700;
+  font-size: 1.30rem;
+  display: block;
+  color: #433E36;
+}
+
+.cta-btn__site-name {
+  font-weight: 700;
+  font-size: 0.75rem;
+  color: #433E36;
+}
+
+.menu-page-list {
+  list-style-type: none; 
+  padding:0;
+  width: 100%;
+}
+
+.menu-page-list li {
+  display: flex;
+  flex-direction: row;
+  border-top: solid 1px #F5F2EB;
+  width: 100%;
+}
+
+.menu-page-list li:last-child {
+  border-bottom: solid 1px #F5F2EB;
+}
+
+.menu-page-list a {
+  text-decoration: none;
+  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.menu-page-list a:hover{
+  opacity: 0.7;
+}
+
+.menu-page-list p {
+  margin-left: 1rem;
+  font-weight: 400;
+  color: #433E36;
+}
+
+.extension-body-text p{
+  font-size: 0.8125rem;
+}
+
+.temporary-hide {
+  display: none !important;
+}
