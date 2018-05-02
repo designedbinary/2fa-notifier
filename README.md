@@ -10,6 +10,12 @@ active initial development. Please create an issue to share your
 idea before investing time at the keyboard to make sure that your
 PR will be accepted.
 
+# Download and Install
+
+2FA Notifier is currently only available for Chrome as an extension. Furthermore, it is not discoverable through the Chrome Store, you must use the link below. 
+
+[Install 2FA Notifier through the Chrome Store](https://chrome.google.com/webstore/detail/2fa-notifier/lggnfpepjfjffimehbjeofegcbmhogoj) 
+
 # Community
 Inspired by [Jordan Sissel](https://gist.github.com/jordansissel/3088552) and others:
 
