@@ -1,0 +1,29 @@
+.main-content {
+  word-wrap: break-word;
+  max-width: 50rem;
+  margin: 0rem auto;
+
+ /* @include respond-to(xl) {
+    margin-left: 7vw;
+  }
+  
+  @include respond-to(l) {
+    max-width: 64rem;
+    padding: 2rem 7vw !important;
+    margin: 0 auto;
+    //margin-left: 4vw;
+  }
+
+  @include respond-to(m) {
+    padding: 2rem 4rem;
+  }
+
+  @include respond-to(s) {
+    padding: 3rem;
+  }  /**/
+}
+
+.header-content {
+  font-weight: 900;
+  text-transform: uppercase;
+}
