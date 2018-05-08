@@ -7,8 +7,8 @@ $breakpoints: (
 );
 
 //colors
-$primary-color: #384265; //#057aff; // 384265
-$secondary-color: #53799C;
+$branded-yellow: #F3CD50;
+$branded-brown: #433E36;
 $highlight-color: #4c70f3;
 $muted-grey-color: #e4e3ed;
 $muted-grey-blue-tinge-color: #9caeb4;
@@ -25,12 +25,12 @@ $header-bg-color-secondary: #155799 !default;
 $footer-bg-color: $muted-grey-color !default;
 
 // Text
-$section-headings-color: $primary-color !default;
-$body-text-color: $primary-color !default;
+$section-headings-color: $branded-brown !default;
+$body-text-color: $branded-brown !default;
 $body-link-color: $highlight-color !default;
-$blockquote-text-color: $secondary-color !default;
-$caption-text-color: $secondary-color !default;
-$project-info-display-text-color: $primary-color !default;
+$blockquote-text-color: $branded-brown !default;
+$caption-text-color: $branded-brown !default;
+$project-info-display-text-color: $branded-brown !default;
 $muted-display-text-color: $muted-grey-blue-tinge-color;
 
 // Code
