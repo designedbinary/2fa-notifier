@@ -18,4 +18,4 @@ support 2FA and specifically how to enable it.
 
 ---
 
-<div class="open-source-note">We’re open sourced! Check out our code in this <a href="https://github.com/conorgil/2fa-notifier">Github repo</a>.</div>
+<div class="open-source-note">We're open sourced! Check out our code in this <a href="https://github.com/conorgil/2fa-notifier">Github repo</a>.</div>
