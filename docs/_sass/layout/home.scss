@@ -1,6 +1,11 @@
-html, body {
+html {
+  //height: 100%
+}
+
+body {
   background-color: $branded-yellow;
   height: 100%;
+  //overflow: hidden;
 }
 
 .main-content {
@@ -8,7 +13,7 @@ html, body {
   max-width: 36rem;
   margin: 0rem auto;
   color: $branded-brown;
-  padding: 2rem;
+  padding: 1rem 2rem;
 
  /* @include respond-to(xl) {
     margin-left: 7vw;

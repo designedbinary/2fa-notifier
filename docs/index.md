@@ -14,8 +14,6 @@ Two-Factor Authentication (2FA) is a fantastic way to make it harder for hackers
 2FA Notifier let's you know which sites you visit
 support 2FA and specifically how to enable it.
 
-Anytime you visit a site that supports 2FA, a notification will pop up in the top right of your computer. When you click on it, you will be brought directly to the site's documentation explaining how to enable 2FA.
-
 <a href="https://chrome.google.com/webstore/detail/lggnfpepjfjffimehbjeofegcbmhogoj/publish-accepted?authUser=0&hl=en-US" class="cta-btn">Get 2FA Notifier</a>
 
 ---
