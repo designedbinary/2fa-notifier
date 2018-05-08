@@ -14,7 +14,7 @@ Two-Factor Authentication (2FA) is a fantastic way to make it harder for hackers
 2FA Notifier let's you know which sites you visit
 support 2FA and specifically how to enable it.
 
-<a href="https://chrome.google.com/webstore/detail/lggnfpepjfjffimehbjeofegcbmhogoj/publish-accepted?authUser=0&hl=en-US" class="cta-btn">Get 2FA Notifier</a>
+<a href="https://chrome.google.com/webstore/detail/lggnfpepjfjffimehbjeofegcbmhogoj" class="cta-btn">Get 2FA Notifier</a>
 
 ---
 
