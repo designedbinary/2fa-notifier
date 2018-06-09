@@ -10,26 +10,28 @@
   <body>
     
     <header>
-      <h1 class="logo-text"><a href="{{ site.url }}">2FA Notifier</a></h1>
+      <div class="standard-container">
+        <h1 class="logo-text"><a href="{{ site.url }}">2FA Notifier</a></h1>
+      </div>
     </header>
 
     <main>
-      <section class="home__grid-container">
+      <section class="standard-container home__section">
         <div class="home__art">
           <img src="/assets/main_art.svg" alt="Primary illustration of extension dropdown" />
         </div>
-        <div class="home__text">
+        <div class="home__description">
           <h1>Get notified when the websites you visit offer two-factor authentication (2FA)</h1>
           <a href="https://chrome.google.com/webstore/detail/lggnfpepjfjffimehbjeofegcbmhogoj" alt="Install for Chrome" class="cta-btn">Install for Chrome</a>
           <a href="https://addons.mozilla.org/en-US/firefox/addon/2fa-notifier/" alt="Install for Chrome" class="cta-btn">Install for Firefox</a>
         </div>
       </section>
 
-      <section>
+      <section class="standard-container home__section home__section--reverse-order bgcolor--beige">
         <div class="home__art">
           <img src="/assets/scare_hackers.svg" alt="Illustration of a personified browser and smartphone scaring a cartoonized hacker." />
         </div>
-        <div class="home__text">
+        <div class="home__description">
           <h2>2FA helps to keep hackers at bay</h2>
           <p>Passwords can be digitally stolen. But to steal a phone requires physical exertion. This is what gives you that extra layer of protection. While a hacker can comfortably sit at home to steal your password, getting your phone requires a lot more effort. <br/><br/> 
 
@@ -37,29 +39,30 @@
         </div>
       </section>
 
-      <section>
+      <section class="standard-container home__section bgcolor--beige-light">
         <div class="home__art">
           <img src="/assets/how_it_works.svg" alt="Illustration of a personified browser and smartphone checking a browser URL against their list of 2FA supported websites." />
         </div>
-        <div class="home__text">
+        <div class="home__description">
           <h2>How does it work?</h2>
-          <p>2FA Notifier simply compares the website you are visiting to a list of known 2FA capable websites provided by twofactorauth.org. If the website is in our list, we notify you to enable 2FA. </p>
+          <p>2FA Notifier simply compares the website you are visiting to a list of known 2FA capable websites provided by <a href="https://twofactorauth.org/">twofactorauth.org</a>. If the website is in our list, we notify you to enable 2FA. </p>
         </div>
       </section>
 
     </main>
 
-    <footer>
-      <section>
-        <h3>About</h3>
-        <p>2FAN is an open source project built by Conor and Ray. Our goal is to make the web a safer place for everyone. This project uses data from another open source project twofactorauth.org. </p>
-      </section>
+    <footer class="bgcolor--beige-light">
+      <div class="standard-container col12-grid">
+        <section>
+          <h3>About</h3>
+          <p>2FAN is an open source project built by Conor and Ray. Our goal is to make the web a safer place for everyone. This project uses data from another open source project twofactorauth.org. </p>
+        </section>
 
-      <section>
-        <h3>Feedback</h3>
-        <p>Curious about the extension? Have ideas about how it can be better? We’d love to hear from you! Create a Github issue with your idea here. </p>
-      </section>
-
+        <section>
+          <h3>Feedback</h3>
+          <p>Curious about the extension? Have ideas about how it can be better? We’d love to hear from you! Create a Github issue with your idea here. </p>
+        </section>
+      </div>
     </footer>
 
   </body>
