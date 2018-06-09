@@ -99,7 +99,7 @@ hr {
   background-color: #F5F2EB;
   box-shadow: 0px 3px 12px rgba(67, 62, 54, 0.34);
   border-radius: 200px;
-  transition: transform 400ms;
+  transition: transform 600ms;
   transition-timing-function: cubic-bezier(0.2,1,0.3,1);
 
   &:first-of-type {
@@ -126,7 +126,7 @@ hr {
   }
 
   &:hover::after {
-    opacity: 0.5;
+    opacity: 0.3;
   }
 }
 
@@ -136,26 +136,67 @@ hr {
   padding-right: 2rem;
   max-width: 64rem;
   margin: 0rem auto;
+
+  @include max-respond-to(m){
+    max-width: 100%;
+  }
 }
 
+.footer__container{
+  display: grid;
+  grid-template-columns: repeat(3, [col-start] 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 1rem;
+  justify-items: center;
+  align-items: start;
+  padding-bottom: 2rem;
+  border-top: 1px solid $branded-beige-dark;
+
+  grid-template-areas: 
+    "about feedback .";
+
+  @include max-respond-to(m){
+      grid-template-columns: auto auto;
+      //grid-auto-rows: auto auto;
+  }
+}
+
+.footer__header{
+  font-size: ms(0);
+  margin-bottom: 0.5rem;
+  color: $branded-brown-light;
+}
+
+.footer__description{
+  font-size: ms(-1);
+  color: $branded-brown-light;
+}
 
 .home__section {
   @include primary-grid-layout();
   
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 6rem;
 
   grid-template-areas:
-    "artwork artwork artwork artwork artwork artwork description description description description description description";
+    "artwork description ";
 
-    div:first-child{
-      padding-right: 2rem;
-    }
+  @include max-respond-to(m){
+    grid-template-areas:
+      "artwork"
+      "description";
+  }
 }
 
 .home__section--reverse-order {
   grid-template-areas:
-    "description description description description description description artwork artwork artwork artwork artwork artwork";
+    "description artwork";
+
+  @include max-respond-to(m){
+    grid-template-areas:
+      "artwork"
+      "description";
+  }
 }
 
 .home__art {
@@ -203,4 +244,26 @@ hr {
     margin-right: -50vw;
     background: $branded-beige;
   }
+}
+
+.curved-bg--beige{
+  position: absolute;
+  fill: $branded-beige;
+  bottom: 0;
+  width: 100vw;
+  //height: 10vw;
+  transform: rotate(180deg);
+  z-index: -1;
+  margin-bottom: -2px;
+}
+
+.curved-bg--beige-lighter{
+  position: absolute;
+  fill: $branded-beige-lighter;
+  bottom: 0;
+  width: 100vw;
+  //height: 10vw;
+  transform: rotate(180deg);
+  z-index: -1;
+  margin-bottom: -2px;
 }
