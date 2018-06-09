@@ -113,3 +113,9 @@ hr {
 .cta-btn:hover::after {
   opacity: 0.5;
 } /**/
+
+
+
+.home__grid-container {
+  @include primary-grid-layout();
+}

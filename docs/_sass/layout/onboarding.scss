@@ -21,14 +21,7 @@
 }
 
 .onboarding-tutorial {
-  margin: 2rem auto;
-  display: grid;
-  grid-template-columns: repeat(12, [col-start] 1fr);
-  grid-gap: 0.5rem;
-  justify-items: center;
-  align-items: center;
-  position: relative;
-  padding-top: 2rem;
+  @include primary-grid-layout();
 
   @include max-respond-to(m){
     grid-template-rows: auto;
