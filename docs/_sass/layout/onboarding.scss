@@ -22,6 +22,7 @@
 
 .onboarding-tutorial {
   padding-top: 3rem;
+  padding-bottom: 3rem;
   position: relative;
   
   @include primary-grid-layout();
@@ -50,6 +51,7 @@
   display: flex;
   position: relative;
   overflow: hidden;
+  display: block;
 
   @include max-respond-to(l){
     position: absolute;
@@ -61,6 +63,10 @@
     position: relative;
     right: unset;
     width: unset;
+  }
+
+  img {
+    height: unset;
   }
 }
 
@@ -89,9 +95,10 @@
 
 .onboarding-tutorial__image--explanation {
   position: absolute;
-  top: 1.7rem;
-  right: -1.25rem;
+  top: 10%;
+  right: -4%;
   opacity: 0;
+  width: 65%;
 
   animation-name: showicon;
   animation-duration: 4s; 
