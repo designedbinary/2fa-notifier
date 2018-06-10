@@ -17,13 +17,23 @@
 
     <main>
       <section class="standard-container home__section">
-        <div class="home__art">
-          <img src="/assets/main_art.svg" alt="Primary illustration of extension dropdown" />
+        <div class="home__art home__art--main-art">
+          <img src="/assets/main_art.svg" alt="Primary illustration of extension dropdown" class="home__art--main-art"/>
         </div>
         <div class="home__description">
           <h1>Get notified when the websites you visit offer two-factor authentication (2FA)</h1>
-          <a href="https://chrome.google.com/webstore/detail/lggnfpepjfjffimehbjeofegcbmhogoj" alt="Install for Chrome" class="cta-btn">Install for Chrome</a>
-          <a href="https://addons.mozilla.org/en-US/firefox/addon/2fa-notifier/" alt="Install for Chrome" class="cta-btn">Install for Firefox</a>
+          <a href="https://chrome.google.com/webstore/detail/lggnfpepjfjffimehbjeofegcbmhogoj" alt="Install for Chrome" class="cta-btn">
+            <div class="install-btn-container">
+              <img src="/assets/chrome.png"  srcset="/assets/chrome.png, /assets/chrome@2x.png 2x" alt="Chrome browser icon" />
+              Install <br>for Chrome
+            </div>
+          </a>
+          <a href="https://addons.mozilla.org/en-US/firefox/addon/2fa-notifier/" alt="Install for Chrome" class="cta-btn">
+            <div class="install-btn-container">
+              <img src="/assets/firefox.png" srcset="/assets/firefox.png, /assets/firefox@2x.png 2x" alt="Firefox browser icon" />
+              Install <br>for Firefox
+            </div>
+          </a>
         </div>
         <svg class="curved-bg--beige" viewBox="0 0 1280 116" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 115.635C373.5 115.635 916 102.495 1280 0V115.635H0Z" transform="translate(1280 116) rotate(180)"/>

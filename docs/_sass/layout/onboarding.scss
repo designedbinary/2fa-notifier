@@ -21,52 +21,44 @@
 }
 
 .onboarding-tutorial {
+  padding-top: 3rem;
+  position: relative;
+  
   @include primary-grid-layout();
 
+  grid-template-areas:
+    "artwork description ";
+
   @include max-respond-to(m){
-    grid-template-rows: auto;
+    grid-template-areas:
+      "artwork"
+      "description";
   }
+
 }
 
 .onboarding-tutorial__text {
   //background-color: #ffffff;
-  grid-column-start: 8;
-  grid-column-end: 13;
-  grid-row: 1 / 2;
-  padding-left: 2rem;
-  
-  @include max-respond-to(l){
-    grid-column-start: 7;
-  }
-  
-  @include max-respond-to(m){
-    grid-row: 2;
-    grid-column-start: 1;
-    padding-right: 2rem;
-  }
+  grid-area: description;
+  //padding-left: 2rem;
 
 }
 
 .onboarding-tutorial__image {
   //background-color: #ffffff;
-  grid-column-start: 1;
-  grid-column-end: 8;
-  grid-row: 1 / 2;
+  grid-area: artwork;
   display: flex;
   position: relative;
   overflow: hidden;
 
   @include max-respond-to(l){
     position: absolute;
-    right: 20%;
+    right: 0;
     width: 500px;
   }
 
   @include max-respond-to(m){
     position: relative;
-    grid-column-start: 1;
-    grid-column-end: 13;
-    grid-row: 1 / 2;
     right: unset;
     width: unset;
   }

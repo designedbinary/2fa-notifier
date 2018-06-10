@@ -64,6 +64,7 @@ footer {
   
   a {
     text-decoration: none;
+    color: $branded-brown;
   }
 
   a:visited {
@@ -90,11 +91,9 @@ hr {
   font-weight: 700;
   font-size: ms(0);
   color: $branded-brown;
-  //text-transform: ;
+  line-height: 1.1;
   margin: 1rem 0;
-  //width: 100%;
   padding: 0.75rem 1rem;
-  text-align: center;
   text-decoration: none;
   background-color: #F5F2EB;
   box-shadow: 0px 3px 12px rgba(67, 62, 54, 0.34);
@@ -128,6 +127,20 @@ hr {
   &:hover::after {
     opacity: 0.3;
   }
+}
+
+.install-btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  img {
+    width: 32px;
+    height: 32px;
+    margin-right: 0.5rem;
+  }
+
 }
 
 .standard-container {
@@ -177,6 +190,7 @@ hr {
   
   padding-top: 3rem;
   padding-bottom: 6rem;
+  position: relative;
 
   grid-template-areas:
     "artwork description ";
@@ -201,6 +215,27 @@ hr {
 
 .home__art {
   grid-area: artwork;
+}
+
+.home__art--main-art {
+  position: relative;
+  right: unset;
+  
+  @media screen and (max-width: 1020px) {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100vw;
+    max-width: 784px;
+  }
+
+  @include max-respond-to(m) {
+    position: relative;
+    right: unset;
+    max-width: unset;
+    top: unset;
+    width: 100%
+  }
 }
 
 .home__description {
